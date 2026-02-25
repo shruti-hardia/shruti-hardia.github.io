@@ -23,7 +23,7 @@ background:#0a192f;
 color:#e6edf3;
 }
 
-/* NAVBAR */
+/* NAV */
 
 nav{
 position:fixed;
@@ -36,107 +36,114 @@ z-index:1000;
 }
 
 nav a{
-margin:0 15px;
+margin:0 10px;
 color:#64ffda;
 text-decoration:none;
-font-weight:500;
+font-size:14px;
 }
 
-/* HERO */
+/* HOME */
 
-header{
+#home{
 height:100vh;
 display:flex;
-flex-direction:column;
 justify-content:center;
 align-items:center;
-text-align:center;
+}
+
+.intro{
+
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+gap:40px;
 padding:20px;
+
 }
 
-header h1{
-font-size:52px;
+.profile img{
+
+width:180px;
+border-radius:50%;
+border:3px solid #64ffda;
+
 }
 
-header span{
+.intro-text{
+
+max-width:600px;
+
+}
+
+.intro-text h1{
+
+font-size:48px;
+
+}
+
+.intro-text span{
+
 color:#64ffda;
-}
 
-header p{
-margin-top:15px;
-color:#8892b0;
-max-width:800px;
-}
-
-.buttons{
-margin-top:30px;
 }
 
 .buttons a{
-text-decoration:none;
+
+display:inline-block;
 margin:8px;
-padding:12px 20px;
-border-radius:6px;
+padding:10px 18px;
 background:#64ffda;
 color:black;
-font-weight:600;
-display:inline-block;
-transition:0.3s;
-}
+border-radius:6px;
+text-decoration:none;
 
-.buttons a:hover{
-background:white;
 }
 
 /* SECTION */
 
 section{
+
 padding:90px 20px;
 max-width:1000px;
 margin:auto;
+
 }
 
 h2{
+
 color:#64ffda;
 margin-bottom:20px;
+
 }
 
 .card{
+
 background:#112240;
 padding:25px;
 border-radius:10px;
 margin-bottom:15px;
-line-height:1.7;
-transition:0.3s;
+
 }
 
-.card:hover{
-transform:translateY(-5px);
-}
+.skills span,
+.cert span,
+.membership span{
 
-/* SKILLS */
-
-.skills span{
 display:inline-block;
 background:#233554;
 padding:8px 15px;
 margin:6px;
 border-radius:20px;
+
 }
-
-/* PROJECT */
-
-.project a{
-color:#64ffda;
-text-decoration:none;
-}
-
-/* FOOTER */
 
 footer{
+
 text-align:center;
 padding:30px;
 color:#8892b0;
+
 }
 
 </style>
@@ -145,160 +152,227 @@ color:#8892b0;
 
 <nav>
 
+<a href="#home">Home</a>
 <a href="#about">About</a>
+<a href="#experience">Experience</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
+<a href="#certifications">Certifications</a>
 <a href="#publications">Publications</a>
+<a href="#volunteer">Volunteer</a>
+<a href="#membership">Membership</a>
 <a href="#contact">Contact</a>
 
 </nav>
 
-<header>
+<!-- HOME -->
+
+<section id="home">
+
+<div class="intro">
+
+<div class="profile">
+
+<img src="assets/profile.jpg" alt="Shruti Hardia">
+
+</div>
+
+<div class="intro-text">
 
 <h1>Shruti <span>Hardia</span></h1>
 
 <p>
-Senior Full Stack .NET Developer and Cloud Engineer specializing in scalable cloud-native platforms,
-distributed systems, and enterprise-grade application architecture.
+
+Senior Full Stack .NET Developer and Cloud Engineer with 9+ years of experience
+designing scalable enterprise systems, cloud-native applications,
+and distributed platforms.
+
 </p>
 
 <div class="buttons">
 
-<a href="#" target="_blank">
-GitHub (Coming Soon)
-</a>
+<a href="assets/Shruti_Hardia_Resume.pdf">Resume</a>
 
-<a href="assets/Shruti_Hardia_Resume.pdf" target="_blank">
-Download Resume
-</a>
+<a href="https://www.linkedin.com/in/hardia-shruti">LinkedIn</a>
 
-<a href="https://www.linkedin.com/in/hardia-shruti" target="_blank">
-LinkedIn
-</a>
+<a href="https://scholar.google.com/citations?hl=en&user=JuTnrssAAAAJ">Google Scholar</a>
 
-<a href="https://scholar.google.com/citations?hl=en&user=JuTnrssAAAAJ" target="_blank">
-Google Scholar
-</a>
+<a href="#">GitHub</a>
 
 </div>
 
-</header>
-
-<section id="about">
-
-<h2>About Me</h2>
-
-<div class="card">
-
-<p>
-
-I am a Senior Full Stack .NET Developer and Cloud Engineer with over ten years of experience building scalable, secure, and high-performance enterprise applications and cloud-native platforms. My expertise spans modern .NET technologies, distributed systems engineering, and cloud infrastructure design, enabling organizations to deliver reliable digital solutions at scale.
-
-<br><br>
-
-I have extensive experience designing and deploying AWS-based architectures using Docker, Kubernetes, and Terraform, along with implementing robust CI/CD pipelines and DevOps automation. My work has focused on transforming legacy systems into resilient cloud-native platforms, improving deployment speed by up to 60% while enhancing reliability and operational efficiency. These systems have supported mission-critical environments and platforms serving over one million users.
-
-<br><br>
-
-In addition to industry engineering, I contribute to the research community through IEEE-published work and ongoing research in cloud computing, distributed systems, and applied machine learning. My research includes secure distributed communication, intelligent decentralized systems, scalable repository analytics, and ML-based cybersecurity applications.
-
-<br><br>
-
-By combining deep expertise in ASP.NET Core, microservices architecture, and cloud-native engineering with strong research foundations, I design robust, fault-tolerant, and secure systems for high-compliance industries such as healthcare, cybersecurity, and enterprise platforms.
-
-</p>
+</div>
 
 </div>
 
 </section>
 
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About</h2>
+
+<div class="card">
+
+Full Stack .NET Developer and Cloud Engineer specializing in ASP.NET Core,
+AWS cloud architecture, Kubernetes, and distributed systems.
+
+I modernize legacy enterprise applications into scalable cloud-native platforms
+serving millions of users, improving deployment speed,
+system reliability, and operational efficiency.
+
+IEEE published researcher in cloud computing and cybersecurity.
+
+</div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+<h2>Experience</h2>
+
+<div class="card">
+
+Senior Full Stack .NET Developer
+
+<br><br>
+
+• Built microservices using ASP.NET Core  
+<br>
+• Designed AWS infrastructure using Terraform  
+<br>
+• Implemented Kubernetes container orchestration  
+<br>
+• Improved deployment performance by 60%  
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
 <section id="skills">
 
-<h2>Technical Skills</h2>
+<h2>Skills</h2>
 
 <div class="card skills">
 
 <span>C#</span>
-<span>.NET Core / ASP.NET Core</span>
-<span>Microservices</span>
-<span>REST APIs</span>
+<span>.NET Core</span>
 <span>AWS</span>
 <span>Docker</span>
 <span>Kubernetes</span>
 <span>Terraform</span>
-<span>SQL Server</span>
-<span>PostgreSQL</span>
-<span>JavaScript</span>
-<span>Angular</span>
-<span>Git</span>
+<span>Microservices</span>
+<span>SQL</span>
+<span>React</span>
 <span>CI/CD</span>
-<span>Distributed Systems</span>
-<span>Cloud Architecture</span>
 
 </div>
 
 </section>
+
+<!-- PROJECTS -->
 
 <section id="projects">
 
 <h2>Projects</h2>
 
-<div class="card project">
+<div class="card">
 
-<h3>Cloud-Native Enterprise Platform</h3>
-
-<p>
-Designed and deployed scalable microservices using ASP.NET Core, Docker, Kubernetes, and AWS,
-supporting high-availability enterprise workloads.
-</p>
-
-<a href="#">
-View Project →
-</a>
+Cloud Native Enterprise Platform
 
 </div>
-
-<div class="card project">
-
-<h3>Distributed Monitoring & Analytics System</h3>
-
-<p>
-Developed monitoring and analytics tools for distributed applications,
-improving system observability and reliability.
-</p>
-
-<a href="#">
-View Project →
-</a>
-
-</div>
-
-</section>
-
-<section id="publications">
-
-<h2>Publications & Research</h2>
 
 <div class="card">
 
-<p>
+Distributed Monitoring System
 
-I actively publish and contribute research in cloud computing,
-distributed systems, and cybersecurity.
+</div>
 
-</p>
+</section>
 
-<br>
+<!-- CERTIFICATIONS -->
 
-<a href="https://scholar.google.com/citations?hl=en&user=JuTnrssAAAAJ" target="_blank">
+<section id="certifications">
 
-View My Google Scholar Profile →
+<h2>Certifications</h2>
+
+<div class="card cert">
+
+<span>AWS Certification (Add yours)</span>
+
+<span>Microsoft Azure Certification</span>
+
+<span>Kubernetes Certification</span>
+
+</div>
+
+</section>
+
+<!-- PUBLICATIONS -->
+
+<section id="publications">
+
+<h2>Publications</h2>
+
+<div class="card">
+
+IEEE Research Publications in cloud computing and cybersecurity.
+
+<br><br>
+
+<a href="https://scholar.google.com/citations?hl=en&user=JuTnrssAAAAJ">
+
+View Google Scholar Profile
 
 </a>
 
 </div>
 
 </section>
+
+<!-- VOLUNTEER -->
+
+<section id="volunteer">
+
+<h2>Volunteer Work</h2>
+
+<div class="card">
+
+Volunteer — IEEE Women in Engineering (WIE)
+
+<br><br>
+
+Supporting STEM initiatives, mentoring engineers,
+and contributing to technical and professional events.
+
+</div>
+
+</section>
+
+<!-- MEMBERSHIP -->
+
+<section id="membership">
+
+<h2>Membership</h2>
+
+<div class="card membership">
+
+<span>IEEE Member</span>
+
+<span>IEEE Women in Engineering (WIE)</span>
+
+<span>IEEE Chicago Section</span>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
 
 <section id="contact">
 
@@ -306,21 +380,13 @@ View My Google Scholar Profile →
 
 <div class="card">
 
-<p>Email: hardia.shruti@gmail.com</p>
-
-<p>
 LinkedIn:
-<a href="https://www.linkedin.com/in/hardia-shruti" target="_blank">
-www.linkedin.com/in/hardia-shruti
-</a>
-</p>
+https://www.linkedin.com/in/hardia-shruti
 
-<p>
+<br><br>
+
 Google Scholar:
-<a href="https://scholar.google.com/citations?hl=en&user=JuTnrssAAAAJ" target="_blank">
-View Publications
-</a>
-</p>
+https://scholar.google.com/citations?hl=en&user=JuTnrssAAAAJ
 
 </div>
 
@@ -328,7 +394,7 @@ View Publications
 
 <footer>
 
-© 2026 Shruti Hardia | Full Stack .NET & Cloud Engineer
+© 2026 Shruti Hardia
 
 </footer>
 
