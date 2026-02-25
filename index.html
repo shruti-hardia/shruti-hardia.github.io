@@ -6,144 +6,165 @@
 
 <title>Shruti Hardia | Full Stack .NET & Cloud Engineer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
+
+:root{
+--bg:#f7f9fc;
+--card:#ffffff;
+--primary:#2f3e46;
+--secondary:#5f6c72;
+--accent:#6c7a89;
+--border:#e3e8ee;
+}
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Poppins, sans-serif;
+font-family:Inter,sans-serif;
 scroll-behavior:smooth;
 }
 
 body{
-background:#0a192f;
-color:#e6edf3;
+background:var(--bg);
+color:var(--primary);
 }
 
-/* NAV */
+/* NAVBAR */
 
 nav{
 position:fixed;
 top:0;
 width:100%;
-background:#020c1b;
+background:white;
+border-bottom:1px solid var(--border);
 padding:15px;
 text-align:center;
 z-index:1000;
 }
 
 nav a{
-margin:0 10px;
-color:#64ffda;
+margin:0 12px;
 text-decoration:none;
+color:var(--secondary);
+font-weight:500;
 font-size:14px;
+}
+
+nav a:hover{
+color:black;
 }
 
 /* HOME */
 
 #home{
-height:100vh;
+min-height:100vh;
 display:flex;
-justify-content:center;
 align-items:center;
+justify-content:center;
+padding:100px 20px 40px 20px;
 }
 
-.intro{
-
+.hero{
 display:flex;
 flex-wrap:wrap;
 align-items:center;
-justify-content:center;
-gap:40px;
-padding:20px;
-
+gap:50px;
+max-width:1000px;
 }
 
-.profile img{
-
+.hero img{
 width:180px;
 border-radius:50%;
-border:3px solid #64ffda;
-
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
 }
 
-.intro-text{
+.hero-text h1{
+font-size:42px;
+margin-bottom:10px;
+}
 
+.hero-text p{
+color:var(--secondary);
 max-width:600px;
-
+line-height:1.6;
 }
 
-.intro-text h1{
-
-font-size:48px;
-
-}
-
-.intro-text span{
-
-color:#64ffda;
-
+.buttons{
+margin-top:20px;
 }
 
 .buttons a{
-
 display:inline-block;
-margin:8px;
+margin:6px;
 padding:10px 18px;
-background:#64ffda;
-color:black;
-border-radius:6px;
+background:var(--primary);
+color:white;
 text-decoration:none;
-
+border-radius:6px;
+font-size:14px;
 }
 
-/* SECTION */
+.buttons a:hover{
+opacity:.85;
+}
+
+/* SECTIONS */
 
 section{
-
-padding:90px 20px;
 max-width:1000px;
 margin:auto;
-
+padding:70px 20px;
 }
 
 h2{
-
-color:#64ffda;
 margin-bottom:20px;
-
+font-size:26px;
 }
 
 .card{
-
-background:#112240;
-padding:25px;
-border-radius:10px;
+background:var(--card);
+border:1px solid var(--border);
+padding:20px;
+border-radius:8px;
 margin-bottom:15px;
-
 }
+
+/* TIMELINE */
+
+.timeline{
+border-left:3px solid var(--border);
+padding-left:20px;
+}
+
+.timeline-item{
+margin-bottom:20px;
+}
+
+/* SKILLS */
 
 .skills span,
 .cert span,
-.membership span{
+.membership span,
+.ach span{
 
 display:inline-block;
-background:#233554;
-padding:8px 15px;
-margin:6px;
+border:1px solid var(--border);
+padding:8px 14px;
 border-radius:20px;
+margin:5px;
+font-size:14px;
 
 }
 
-footer{
+/* FOOTER */
 
+footer{
 text-align:center;
 padding:30px;
-color:#8892b0;
-
+color:var(--secondary);
 }
 
 </style>
@@ -161,6 +182,7 @@ color:#8892b0;
 <a href="#publications">Publications</a>
 <a href="#volunteer">Volunteer</a>
 <a href="#membership">Membership</a>
+<a href="#achievements">Achievements</a>
 <a href="#contact">Contact</a>
 
 </nav>
@@ -169,23 +191,21 @@ color:#8892b0;
 
 <section id="home">
 
-<div class="intro">
+<div class="hero">
 
-<div class="profile">
+<img src="assets/profile.jpg">
 
-<img src="assets/profile.jpg" alt="Shruti Hardia">
+<div class="hero-text">
 
-</div>
-
-<div class="intro-text">
-
-<h1>Shruti <span>Hardia</span></h1>
+<h1>Shruti Hardia</h1>
 
 <p>
 
 Senior Full Stack .NET Developer and Cloud Engineer with 9+ years of experience
-designing scalable enterprise systems, cloud-native applications,
-and distributed platforms.
+architecting scalable enterprise applications, distributed systems,
+and cloud-native platforms using ASP.NET Core, AWS, Kubernetes, and Terraform.
+
+IEEE published researcher and active IEEE member.
 
 </p>
 
@@ -215,14 +235,13 @@ and distributed platforms.
 
 <div class="card">
 
-Full Stack .NET Developer and Cloud Engineer specializing in ASP.NET Core,
-AWS cloud architecture, Kubernetes, and distributed systems.
+Full Stack .NET Developer specializing in ASP.NET Core, microservices,
+cloud architecture, and distributed systems.
 
-I modernize legacy enterprise applications into scalable cloud-native platforms
-serving millions of users, improving deployment speed,
-system reliability, and operational efficiency.
+Extensive experience modernizing enterprise applications into scalable AWS-based
+cloud-native environments supporting millions of users.
 
-IEEE published researcher in cloud computing and cybersecurity.
+IEEE published researcher focused on cloud computing and cybersecurity.
 
 </div>
 
@@ -234,19 +253,32 @@ IEEE published researcher in cloud computing and cybersecurity.
 
 <h2>Experience</h2>
 
-<div class="card">
+<div class="card timeline">
 
-Senior Full Stack .NET Developer
+<div class="timeline-item">
 
-<br><br>
+<b>Senior Full Stack .NET Developer</b>
 
-• Built microservices using ASP.NET Core  
-<br>
-• Designed AWS infrastructure using Terraform  
-<br>
-• Implemented Kubernetes container orchestration  
-<br>
-• Improved deployment performance by 60%  
+<p>
+
+Designed scalable microservices, implemented Kubernetes deployments,
+and improved CI/CD deployment speed by 60%.
+
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<b>Cloud Engineer</b>
+
+<p>
+
+Architected AWS infrastructure using Terraform and containerized workloads.
+
+</p>
+
+</div>
 
 </div>
 
@@ -262,12 +294,14 @@ Senior Full Stack .NET Developer
 
 <span>C#</span>
 <span>.NET Core</span>
+<span>ASP.NET Core</span>
 <span>AWS</span>
 <span>Docker</span>
 <span>Kubernetes</span>
 <span>Terraform</span>
 <span>Microservices</span>
-<span>SQL</span>
+<span>SQL Server</span>
+<span>PostgreSQL</span>
 <span>React</span>
 <span>CI/CD</span>
 
@@ -283,13 +317,17 @@ Senior Full Stack .NET Developer
 
 <div class="card">
 
-Cloud Native Enterprise Platform
+<b>Cloud Native Enterprise Platform</b>
+
+<p>ASP.NET Core microservices deployed on AWS Kubernetes cluster.</p>
 
 </div>
 
 <div class="card">
 
-Distributed Monitoring System
+<b>Distributed Monitoring Platform</b>
+
+<p>Real-time monitoring and analytics system.</p>
 
 </div>
 
@@ -303,10 +341,8 @@ Distributed Monitoring System
 
 <div class="card cert">
 
-<span>AWS Certification (Add yours)</span>
-
-<span>Microsoft Azure Certification</span>
-
+<span>AWS Certification</span>
+<span>Microsoft Certification</span>
 <span>Kubernetes Certification</span>
 
 </div>
@@ -321,7 +357,7 @@ Distributed Monitoring System
 
 <div class="card">
 
-IEEE Research Publications in cloud computing and cybersecurity.
+IEEE publications in distributed systems, cloud computing, and cybersecurity.
 
 <br><br>
 
@@ -343,12 +379,10 @@ View Google Scholar Profile
 
 <div class="card">
 
-Volunteer — IEEE Women in Engineering (WIE)
+Volunteer — IEEE Women in Engineering (WIE), Chicago Section
 
-<br><br>
-
-Supporting STEM initiatives, mentoring engineers,
-and contributing to technical and professional events.
+Supporting professional development, STEM outreach,
+and technical mentoring initiatives.
 
 </div>
 
@@ -363,10 +397,24 @@ and contributing to technical and professional events.
 <div class="card membership">
 
 <span>IEEE Member</span>
-
-<span>IEEE Women in Engineering (WIE)</span>
-
+<span>IEEE Women in Engineering</span>
 <span>IEEE Chicago Section</span>
+
+</div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section id="achievements">
+
+<h2>Achievements</h2>
+
+<div class="card ach">
+
+<span>IEEE Published Author</span>
+<span>Architected systems serving 1M+ users</span>
+<span>60% deployment performance improvement</span>
 
 </div>
 
@@ -380,12 +428,14 @@ and contributing to technical and professional events.
 
 <div class="card">
 
-LinkedIn:
+LinkedIn  
+<br>
 https://www.linkedin.com/in/hardia-shruti
 
 <br><br>
 
-Google Scholar:
+Google Scholar  
+<br>
 https://scholar.google.com/citations?hl=en&user=JuTnrssAAAAJ
 
 </div>
